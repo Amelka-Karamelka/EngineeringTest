@@ -1,0 +1,263 @@
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff7e6; /* Светлый фон */
+    color: #000; /* Чёрный текст */
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+    color: #f97306; /* Основной оранжевый */
+}
+
+/* Логотип */
+.logo {
+    display: block;
+    margin: 20px auto;
+    max-width: 200px;
+    height: auto;
+}
+
+/* Главная страница */
+.main-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.map {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.map-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.image {
+    position: absolute;
+    z-index: 10;
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    filter: grayscale(100%);
+    opacity: 1 !important;
+    border: 2px solid #000; /* Чёрная рамка */
+    transition: transform 0.3s, border-color 0.3s; /* Плавные переходы */
+}
+
+.image:hover {
+    transform: scale(1.2);
+    border-color: #f97306; /* Оранжевая рамка при наведении */
+}
+
+.img1 {
+    filter: none;
+    top: 30%;
+    left: 7%;
+}
+
+.img2 {
+    top: 2%;
+    left: 2%;
+}
+
+.img3 {
+    top: 80%;
+    left: 50%;
+}
+
+/* Страница с вопросами */
+.questions-container {
+    margin: 20px;
+    font-size: 1.2em;
+}
+
+.question p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #000; /* Чёрный текст */
+}
+
+.question-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #f97306; /* Оранжевая рамка */
+}
+
+/* Стили для вопроса с полями */
+.question-with-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.short-input {
+    width: 40px;
+    max-width: 40px;
+    min-width: 40px;
+    height: 30px;
+    text-align: center;
+    font-size: 1em;
+    border: 1px solid #f97306; /* Оранжевая рамка */
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #000; /* Чёрный текст */
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    font-size: 1em;
+    border: 1px solid #f97306; /* Оранжевая рамка */
+    border-radius: 4px;
+}
+
+/* Таблица соответствий */
+.correlation-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 1.1em;
+}
+
+.correlation-table th,
+.correlation-table td {
+    border: 1px solid #f97306; /* Оранжевая рамка */
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.dropdown {
+    width: 100%;
+    padding: 5px;
+    font-size: 1em;
+    border: 1px solid #f97306; /* Оранжевая рамка */
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.dropdown:focus {
+    border-color: #c85a03; /* Тёмно-оранжевый при фокусе */
+    outline: none;
+}
+
+/* Кнопки */
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#submit-btn, .btn {
+    display: block;
+    margin: 20px auto;
+    background-color: #f97306; /* Основной оранжевый */
+    color: white;
+    transition: background-color 0.3s;
+}
+
+#submit-btn:hover, .btn:hover {
+    background-color: #c85a03; /* Более тёмный оранжевый */
+}
+
+#retry-btn {
+    background-color: #f44336; /* Красная кнопка для повторной попытки */
+}
+
+#retry-btn:hover {
+    background-color: #d32f2f;
+}
+
+#next-btn {
+    background-color: #4caf50; /* Зелёная кнопка для перехода */
+}
+
+#next-btn:hover {
+    background-color: #388e3c;
+}
+
+/* Всплывающее уведомление */
+.notification {
+    position: fixed;
+    top: -50px; /* Начальное положение вне экрана */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f44336; /* Красный цвет для ошибки */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: top 0.3s ease-in-out; /* Плавная анимация */
+    display: none; /* Скрываем по умолчанию */
+}
+
+.notification.show {
+    display: block; /* Отображение */
+    top: 20px; /* Видимое положение */
+}
+
+/* Галерея изображений */
+.image-selection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Сетка с 3 колонками */
+    gap: 15px; /* Расстояние между картинками */
+    justify-items: center; /* Центровка картинок */
+    margin-top: 20px;
+}
+
+.image-selection img {
+    width: 120px; /* Фиксированная ширина */
+    height: 120px; /* Фиксированная высота */
+    object-fit: cover; /* Обрезка для сохранения пропорций */
+    border: 2px solid #ccc; /* Граница */
+    border-radius: 5px; /* Закруглённые углы */
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.image-selection img:hover {
+    transform: scale(1.1); /* Увеличение при наведении */
+    border-color: #f97306; /* Оранжевая граница при наведении */
+}
+
+.image-selection input[type="checkbox"] {
+    display: none; /* Скрываем чекбоксы */
+}
+
+.image-selection input[type="checkbox"]:checked + img {
+    border-color: green; /* Зелёная граница для выбранных картинок */
+    transform: scale(1.2); /* Большее увеличение для выбранных */
+}

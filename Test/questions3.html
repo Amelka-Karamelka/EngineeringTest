@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Этап 3 - ППМ</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="notification" class="notification"></div>
+    <div class="questions-container">
+        <h1>Этап 3:  ППМ</h1>
+        <form id="questions-form">
+            
+            <!-- Вопрос 1 -->
+            <div class="question">
+                <p>Вопрос 1: Что является определением термина «Заземление»?</p>
+                <div class="radio-group">
+                    <label><input type="radio" name="q1" value="0"> Сторонняя проводящая часть, находящаяся в электрическом контакте с землей непосредственно или через промежуточную проводящую среду, используемая для целей заземления.</label>
+                    <label><input type="radio" name="q1" value="0"> Заземление точек токоведущих частей электроустановки, выполняемое для обеспечения работы электроустановки.</label>
+                    <label><input type="radio" name="q1" value="1"> Преднамеренное электрическое соединение какой-либо точки сети, электроустановки или оборудования с заземляющим устройством. </label>
+                </div>
+            </div>
+
+            <!-- Вопрос 2 -->
+            <div class="question">
+                <p>Вопрос 2: Что запрещено работнику при выполнении работ с применением переносного электроинструмента?</p>
+                <div class="radio-group">
+                    <label><input type="radio" name="q2" value="0"> Выполнять тестирование устройства защитного отключения.</label>
+                    <label><input type="radio" name="q2" value="1"> Разбирать ручные электрические машины и электроинструмент, производить какой-либо ремонт.</label>
+                    <label><input type="radio" name="q2" value="0"> Проверять комплектность и надежность крепления деталей.</label>
+                </div>
+            </div>
+
+            <!-- Вопрос 3 -->
+            <div class="question">
+                <p>Вопрос 3: Чем должны отличаться светильники аварийного освещения от светильников рабочего освещения?</p>
+                <div class="radio-group">
+                    <label><input type="radio" name="q3" value="1"> Знаками или окраской. </label>
+                    <label><input type="radio" name="q3" value="0"> Источником света.</label>
+                    <label><input type="radio" name="q3" value="0"> Исполнением и сроком службы.</label>
+                    <label><input type="radio" name="q3" value="0"> Уровнем светового потока и отсутствием слепящего воздействия.</label>
+                </div>
+            </div>
+
+            <!-- Вопрос 4 -->
+            <div class="question">
+                <p>Вопрос 4: Какие средства индивидуальной защиты (СИЗ) применяются в работе электромонтёра?</p>
+                <div class="image-selection">
+                    <label><input type="checkbox" name="q4" value="1"><img src="images/img1.jpg" alt="Image 1"></label>
+                    <label><input type="checkbox" name="q4" value="1"><img src="images/img2.jpg" alt="Image 2"></label>
+                    <label><input type="checkbox" name="q4" value="1"><img src="images/img3.jpg" alt="Image 3"></label>
+                    <label><input type="checkbox" name="q4" value="1"><img src="images/img4.jpg" alt="Image 4"></label>
+                    <label><input type="checkbox" name="q4" value="1"><img src="images/img5.jpg" alt="Image 5"></label>
+                    <label><input type="checkbox" name="q4" value="1"><img src="images/img6.jpg" alt="Image 6"></label>
+                    <label><input type="checkbox" name="q4" value="0"><img src="images/img7.jpg" alt="Image 7"></label>
+                    <label><input type="checkbox" name="q4" value="0"><img src="images/img8.jpg" alt="Image 8"></label>
+                    <label><input type="checkbox" name="q4" value="0"><img src="images/img9.jpg" alt="Image 9"></label>
+                    <label><input type="checkbox" name="q4" value="0"><img src="images/img10.jpg" alt="Image 10"></label>
+                    <label><input type="checkbox" name="q4" value="0"><img src="images/img11.jpg" alt="Image 11"></label>
+                </div>
+            </div>
+
+
+            <button type="submit" id="submit-btn">Ответить</button>
+        </form>
+    </div>
+    <script src="js/questions3.js"></script>
+</body>
+</html>
