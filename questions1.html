@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Этап 1 - Школа</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="notification" class="notification"></div>
+    <div class="questions-container">
+        <h1>Этап 1: Школа</h1>
+        <form id="questions-form">
+
+            <!-- Вопрос 1 -->
+            <div class="question">
+                <p>Вопрос 1: Даны схемы электрических цепей. Установите соответствие между ответами на вопросы и схемами электрических цепей.</p>
+                <img src="images/circuit-diagram.jpg" alt="Схемы электрических цепей" class="question-image">
+                <div class="question-fields">
+                    <div>
+                        <span>1. В какой цепи можно изменять силу тока?</span>
+                        <input type="text" name="q1a" maxlength="1" class="short-input">
+                    </div>
+                    <div>
+                        <span>2. Где можно измерить силу тока?</span>
+                        <input type="text" name="q1b" maxlength="1" class="short-input">
+                    </div>
+                    <div>
+                        <span>3. В какой цепи лампочку можно включить из двух разных мест?</span>
+                        <input type="text" name="q1c" maxlength="1" class="short-input">
+                    </div>
+                    <div>
+                        <span>4. В какой цепи лампочка горит постоянно?</span>
+                        <input type="text" name="q1d" maxlength="1" class="short-input">
+                    </div>
+                    <div>
+                        <span>5. В какой цепи можно измерить напряжение?</span>
+                        <input type="text" name="q1e" maxlength="1" class="short-input">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Вопрос 2 -->
+            <div class="question">
+                <p>Вопрос 2: Зашифруйте слово "электромонтер" шифром Цезаря со сдвигом 27.</p>
+                <div class="radio-group">
+                    <label><input type="radio" name="q2" value="1"> Янжмфтрорпфжт</label>
+                    <label><input type="radio" name="q2" value="0"> Жхофьъшцшчьоъ</label>
+                    <label><input type="radio" name="q2" value="0"> Ряшюёдвавбёшд</label>
+                    <label><input type="radio" name="q2" value="0"> Лъущбяэыэьбуя</label>
+                </div>
+            </div>
+
+            <!-- Вопрос 3 -->
+            <div class="question">
+                <p>Вопрос 3: Установите соответствие между разделами предмета математики и основными навыками электрика по данным разделам.</p>
+                <table class="correlation-table">
+                    <thead>
+                        <tr>
+                            <th>Основные математические навыки электрика</th>
+                            <th>Разделы математики</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>А. Использование для решения уравнений, связанных с электрическими цепями, такими как Закон Ома и уравнения мощности.</td>
+                            <td>
+                                <select name="q3a" class="dropdown">
+                                    <option value="" disabled selected>Выберите</option>
+                                    <option value="1">Алгебра</option>
+                                    <option value="2">Геометрия</option>
+                                    <option value="3">Тригонометрия</option>
+                                    <option value="4">Статистика</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Б. Применяется при работе с переменным током и анализе синусоидальных волн.</td>
+                            <td>
+                                <select name="q3b" class="dropdown">
+                                    <option value="" disabled selected>Выберите</option>
+                                    <option value="1">Алгебра</option>
+                                    <option value="2">Геометрия</option>
+                                    <option value="3">Тригонометрия</option>
+                                    <option value="4">Статистика</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>В. Полезна для анализа данных и прогнозирования нагрузки.</td>
+                            <td>
+                                <select name="q3c" class="dropdown">
+                                    <option value="" disabled selected>Выберите</option>
+                                    <option value="1">Алгебра</option>
+                                    <option value="2">Геометрия</option>
+                                    <option value="3">Тригонометрия</option>
+                                    <option value="4">Статистика</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Г. Необходима для проектирования и установки электрических систем в соответствии с пространственными ограничениями.</td>
+                            <td>
+                                <select name="q3d" class="dropdown">
+                                    <option value="" disabled selected>Выберите</option>
+                                    <option value="1">Алгебра</option>
+                                    <option value="2">Геометрия</option>
+                                    <option value="3">Тригонометрия</option>
+                                    <option value="4">Статистика</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <button type="submit" id="submit-btn">Ответить</button>
+        </form>
+    </div>
+    <script src="js/questions1.js"></script>
+</body>
+</html>
